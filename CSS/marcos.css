@@ -1,0 +1,163 @@
+/*MARK: Marco 1 */
+.frame-1 {
+    background: white;
+    padding: 30px;
+    border-radius: 12px 8px 15px 10px;
+    box-shadow: 
+        2px 3px 0px #000,
+        4px 1px 0px #000,
+        1px 5px 0px #000,
+        6px 2px 0px #000,
+        3px 6px 0px #000,
+        7px 4px 0px #000,
+        2px 8px 0px #000,
+        8px 6px 0px #000;
+    transform: rotate(-1deg);
+    position: relative;
+}
+
+.frame-1::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border: 2px solid #333;
+    border-radius: 15px 6px 12px 9px;
+    transform: rotate(0.5deg);
+    z-index: -1;
+}
+
+/*MARK: Marco 2 */
+.frame-2 {
+    padding: 30px;
+    position: relative;
+    transform: rotate(0.5deg);
+    width: 350px;
+    height: 230px;
+    background: white;
+}
+
+.frame-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Cpath d='M5,5 Q10,2 15,6 L25,4 Q35,7 45,5 L55,8 Q65,3 75,7 L85,6 Q95,9 105,5 L115,7 Q125,4 135,8 L145,6 Q155,9 165,5 L175,7 Q185,4 195,8 L205,6 Q215,9 225,5 L235,7 Q245,4 255,8 L265,6 Q275,9 285,5 L295,7 L295,15 Q290,12 285,16 L285,25 Q288,35 285,45 L287,55 Q284,65 287,75 L285,85 Q288,95 285,105 L287,115 Q284,125 287,135 L285,145 Q288,155 285,165 L287,175 Q284,185 287,195 L285,195 Q275,192 265,196 L255,194 Q245,197 235,195 L225,197 Q215,194 205,197 L195,195 Q185,198 175,195 L165,197 Q155,194 145,197 L135,195 Q125,198 115,195 L105,197 Q95,194 85,197 L75,195 Q65,198 55,195 L45,197 Q35,194 25,197 L15,196 Q10,199 5,195 L5,185 Q8,175 5,165 L7,155 Q4,145 7,135 L5,125 Q8,115 5,105 L7,95 Q4,85 7,75 L5,65 Q8,55 5,45 L7,35 Q4,25 7,15 L5,5 Z' stroke='%23333' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+/*MARK: Marco 3 */
+.frame-3 {
+    background: white;
+    padding: 30px;
+    border: 3px solid #333;
+    border-radius: 50px 20px 40px 25px / 25px 50px 20px 40px;
+    position: relative;
+    transform: rotate(-0.8deg);
+    filter: drop-shadow(3px 3px 0px rgba(0,0,0,0.3));
+}
+
+.frame-3::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px dashed #666;
+    border-radius: 45px 25px 35px 30px / 30px 45px 25px 35px;
+    opacity: 0.4;
+    transform: rotate(1.2deg);
+}
+
+/*MARK: Marco 4: */
+.frame-4 {
+    background: white;
+    padding: 30px;
+    position: relative;
+    transform: rotate(1.2deg);
+}
+
+.frame-4::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 3px solid #333;
+    border-radius: 8px 12px 6px 10px;
+}
+
+/*MARK: Marco 5 */
+.frame-5 {
+    background: white;
+    padding: 40px 30px;
+    position: relative;
+    width: 350px;
+    height: 230px;
+    transform: rotate(-0.3deg);
+}
+
+.frame-5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Cpath d='M10,10 Q15,8 20,12 L25,9 Q30,13 35,10 L40,14 Q45,8 50,12 L55,11 Q60,15 65,9 L70,13 Q75,7 80,11 L85,12 Q90,8 95,14 L100,10 Q105,16 110,12 L115,9 Q120,13 125,11 L130,15 Q135,9 140,13 L145,10 Q150,14 155,12 L160,8 Q165,12 170,10 L175,14 Q180,8 185,12 L190,11 Q195,15 200,9 L205,13 Q210,7 215,11 L220,12 Q225,8 230,14 L235,10 Q240,16 245,12 L250,9 Q255,13 260,11 L265,15 Q270,9 275,13 L280,10 Q285,14 290,12 L290,20 Q285,18 280,22 L280,30 Q285,28 280,32 L285,40 Q280,38 285,42 L280,50 Q285,48 280,52 L285,60 Q280,58 285,62 L280,70 Q285,68 280,72 L285,80 Q280,78 285,82 L280,90 Q285,88 280,92 L285,100 Q280,98 285,102 L280,110 Q285,108 280,112 L285,120 Q280,118 285,122 L280,130 Q285,128 280,132 L285,140 Q280,138 285,142 L280,150 Q285,148 280,152 L285,160 Q280,158 285,162 L280,170 Q285,168 280,172 L285,180 Q280,178 285,182 L280,190 L275,187 Q270,191 265,185 L260,189 Q255,187 250,188 L245,192 Q240,184 235,190 L230,186 Q225,192 220,188 L215,189 Q210,193 205,187 L200,191 Q195,185 190,189 L185,188 Q180,192 175,186 L170,190 Q165,188 160,192 L155,188 Q150,186 145,190 L140,187 Q135,191 130,185 L125,189 Q120,187 115,191 L110,188 Q105,184 100,190 L95,186 Q90,192 85,188 L80,189 Q75,193 70,187 L65,191 Q60,185 55,189 L50,188 Q45,192 40,186 L35,190 Q30,187 25,191 L20,188 Q15,192 10,190 L10,180 Q15,182 10,178 L12,170 Q8,172 12,168 L10,160 Q15,162 10,158 L12,150 Q8,152 12,148 L10,140 Q15,142 10,138 L12,130 Q8,132 12,128 L10,120 Q15,122 10,118 L12,110 Q8,112 12,108 L10,100 Q15,102 10,98 L12,90 Q8,92 12,88 L10,80 Q15,82 10,78 L12,70 Q8,72 12,68 L10,60 Q15,62 10,58 L12,50 Q8,52 12,48 L10,40 Q15,42 10,38 L12,30 Q8,32 12,28 L10,20 Q15,22 10,18 L10,10 Z' stroke='%23333' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+/*MARK: Marco 6 */
+.frame-6 {
+    background: white;
+    padding: 30px;
+    border: 4px solid transparent;
+    background-image: 
+        linear-gradient(white, white),
+        repeating-linear-gradient(
+            45deg,
+            #333 0px,
+            #333 1px,
+            transparent 1px,
+            transparent 3px
+        );
+    background-clip: padding-box, border-box;
+    border-radius: 15px 8px 20px 12px;
+    transform: rotate(0.7deg);
+    filter: contrast(1.1) brightness(0.95);
+}
+
+/*MARK: ANIMACIONES */
+
+.anim-draw-slow {
+    animation: shake-slow 3s infinite;
+    animation-timing-function: step-end;
+}
+
+.anim-draw-fast {
+    animation: shake-fast 1s infinite;
+    animation-timing-function: step-end;
+}
+
+@keyframes shake-fast {
+    0%, 100% { transform: rotate(0deg) translate(0px, 0px); }
+    25% { transform: rotate(0.2deg) translate(1px, 0px); }
+    50% { transform: rotate(-0.1deg) translate(0px, 1px); }
+    75% { transform: rotate(0.15deg) translate(-1px, 0px); }
+}
+
+@keyframes shake-slow {
+    0%, 100% { transform: rotate(0deg) translate(0px, 0px); }
+    25% { transform: rotate(0.2deg) translate(1px, 0px); }
+    50% { transform: rotate(-0.2deg) translate(0px, 1px); }
+    75% { transform: rotate(0.15deg) translate(-1px, 0px); }
+}
