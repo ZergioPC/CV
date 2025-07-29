@@ -25,7 +25,6 @@
     bottom: -3px;
     border: 2px solid #333;
     border-radius: 15px 6px 12px 9px;
-    transform: rotate(0.5deg);
     z-index: -1;
 }
 
@@ -133,7 +132,6 @@
     background-clip: padding-box, border-box;
     border-radius: 15px 8px 20px 12px;
     transform: rotate(0.7deg);
-    filter: contrast(1.1) brightness(0.95);
 }
 
 /*MARK: ANIMACIONES */
